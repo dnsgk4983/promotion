@@ -1,0 +1,9 @@
+@mixin fontWeight($weight) {
+    font-weight: $weight;
+}
+
+@mixin responsive($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}

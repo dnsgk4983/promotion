@@ -1,0 +1,360 @@
+@import './reset';
+@import './font';
+@import './mixin';
+@import './variable';
+
+.contents {
+    background: url('../images/bg_img.png')no-repeat #f7f7a4;
+    background-size: 100%;
+    &__visual {
+        padding: 21.875rem 0 17.5rem;
+        &__title {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                font-size: 20.375rem;
+                font-family: 'GmarketSansLight';
+                margin-top: 4.125rem;
+                span {
+                    display: block;
+                    font-family: 'GmarketSansBold';
+                    color: $titleColor;
+                }
+                &::after {
+                    content: "2\A 0\A 2\A 2";
+                    position: absolute;
+                    right: -3.75rem;
+                    bottom: 1.75rem;
+                    font-family: 'GmarketSansLight';
+                    font-size: 2.5rem;
+                    line-height: 5rem;
+                    color: $titleColor;
+                    white-space: pre;
+                }
+            }
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 4.5rem;
+                letter-spacing: 0.75rem;
+                color: $titleColor;
+                span {
+                    font-size: 2.25rem
+                }
+                strong {
+                    font-family: 'GmarketSansBold';
+                }
+            }
+        }
+
+        @include responsive(1280px) {
+            background-size: cover;
+            &__title {
+                h1 {
+                    font-size: 15rem;
+                    margin-top: 3rem;
+                    &::after {
+                        line-height: 3rem;
+                    }
+                }
+                p {
+                    font-size: 3rem;
+                    letter-spacing: 0.5rem;
+                    span {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+        @include responsive(768px) {
+            padding: 10rem 1.875rem 12rem;
+            &__title {
+                h1{ 
+                    font-size: 7.5rem;
+                    margin-top: 3rem;
+                    &::after {
+                        right: -1.5rem;
+                        bottom: 1rem;
+                        font-size: 1.25rem;
+                        line-height: 1.5rem;
+                    }
+                }
+                p {
+                    font-size: 1.875rem;
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        @include responsive(540px) {
+            &__title {
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+    &__coupon {
+        position: relative;
+        text-align: center;
+        padding: 8.75rem 0 10.9375rem;
+        background: #f3d249;
+        .section__number {
+            background: #f3d249;
+            p {
+                position: relative;
+                color: #d0ae2c;
+                &::after {
+                    background: #d0ae2c;
+                }
+            }
+        }
+        &__title {
+            p {
+                color: #a1840c;
+            }
+            h1 {
+                color: #493d0b;
+            }
+        }
+    }
+    &__benefit {
+        position: relative;
+        text-align: center;
+        padding: 9.25rem 0 10rem;
+        background: #f7f7a4;
+        .section__number {
+            background: #f7f7a4;
+            p {
+                color: rgba(125, 154, 82, 0.47);
+                &::after {
+                    background: rgba(125, 154, 82, 0.47);
+                }
+            }
+        }
+        &__title {
+            p {
+                color: rgba(125, 154, 82, 0.66);
+            }
+            h1 {
+                color: $titleColor;
+            }
+        }
+    }
+
+    &__promotion {
+        position: relative;
+        text-align: center;
+        padding: 11.25rem 0 7.75rem;
+        background: $titleColor;
+        .section {
+            &__number {
+                background: $titleColor;
+                p {
+                    color: #f7f7a4;
+                    &::after {
+                        background: #f7f7a4;
+                    }
+                }
+            }
+            &__title {
+                p {
+                    color: rgba(237, 239, 157, 0.66);
+                }
+                h1 {
+                    color: #fff;
+                }
+            }
+        }
+        &__products {
+            display: flex;
+            justify-content: center;
+            margin-top: 8.875rem;
+            .product {
+                padding: 0 0.5rem;
+                &__img {
+                    position: relative;
+                    .badge {
+                        position: absolute;
+                        top: -3.375rem;
+                        left: 2.25rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 6.75rem;
+                        height: 6.75rem;
+                        border-radius: 100%;
+                        background: #f3d249;
+                        p {
+                            font-family: 'GmarketSansBold';
+                            font-size: 1.25rem;
+                            color: #3f3232;
+                            line-height: 1.75rem;
+                        }
+                    }
+                    .img {
+                        border-radius: 0.625rem;
+                        overflow: hidden;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+                &__info {
+                    margin-top: 3.5rem;
+                    h3 {
+                        display: inline-block;
+                        font-family: 'GmarketSansBold';
+                        font-size: 2.25rem;
+                        color: #fff;
+                        padding-bottom: 0.125rem;
+                        border-bottom: 3px solid #fff;
+                    }
+                    ul {
+                        margin-top: 3rem;
+                        padding: 0 1rem;
+                        li {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 1.75rem;
+                            color: #5d7933;
+                            margin-bottom: 1.125rem;
+                            padding: 0 1.875rem 0.25rem;
+                            border-bottom: dotted 1px rgba(255, 255, 255, 0.29);
+                            &:last-child {
+                                align-items: end;
+                                margin-bottom: 0;
+                                border: none;
+                                p {
+                                    color: #fff;
+                                }
+                                h5 {
+                                    font-family: 'GmarketSansBold';
+                                    font-size: 2.8125rem;
+                                    color: #f3d249;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @include responsive(768px) {
+                flex-direction: column;
+                .product {
+                    margin-bottom: 7.5rem;
+                    padding: 0 1rem;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &__img {
+                        .img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &__info {
+                        ul {
+                            li {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            @include responsive(540px) {
+                margin-top: 6rem;
+                .product {
+                    padding: 0 1rem;
+                    &__info {
+                        ul {
+                            padding: 0;
+                            li {
+                                font-size: 1.25rem;
+                                padding: 0 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section {
+    &__number {
+        position: absolute;
+        top: -2.5rem;
+        left: 0;
+        right: 0;
+        width: 9.375rem;
+        height: 9.375rem;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 100%;
+        p {
+            position: relative;
+            top: 3rem;
+            left: 0;
+            right: 0;
+            display: inline-block;
+            font-family: 'GmarketSansBold';
+            font-size: 2.25rem;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -0.25rem;
+                width: 100%;
+                height: 2px;
+            }
+        }
+    }
+    &__title {
+        p {
+            font-size: 3.125rem;
+        }
+        h1 {
+            font-family: 'GmarketSansBold';
+            font-size: 5.25rem;
+            margin-top: 2.5rem;
+        }
+    }
+
+    @include responsive(768px){
+        &__title {
+            padding: 0 1.875rem;
+            p {
+                font-size: 2.25rem;
+            }
+            h1 {
+                font-size: 3.5rem;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    @include responsive(540px) {
+        &__title {
+            padding: 0 1rem;
+            p {
+                font-size: 1.75rem;
+            }
+            h1 {
+                font-size: 2.75rem;
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}

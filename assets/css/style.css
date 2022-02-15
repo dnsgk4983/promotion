@@ -1,0 +1,402 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: "GmarketSansMedium";
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.contents {
+  background: url("../images/bg_img.png") no-repeat #f7f7a4;
+  background-size: 100%;
+}
+.contents__visual {
+  padding: 21.875rem 0 17.5rem;
+}
+.contents__visual__title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contents__visual__title h1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 20.375rem;
+  font-family: "GmarketSansLight";
+  margin-top: 4.125rem;
+}
+.contents__visual__title h1 span {
+  display: block;
+  font-family: "GmarketSansBold";
+  color: #7d9a52;
+}
+.contents__visual__title h1::after {
+  content: "2\a 0\a 2\a 2";
+  position: absolute;
+  right: -3.75rem;
+  bottom: 1.75rem;
+  font-family: "GmarketSansLight";
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: #7d9a52;
+  white-space: pre;
+}
+.contents__visual__title p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  letter-spacing: 0.75rem;
+  color: #7d9a52;
+}
+.contents__visual__title p span {
+  font-size: 2.25rem;
+}
+.contents__visual__title p strong {
+  font-family: "GmarketSansBold";
+}
+@media (max-width: 1280px) {
+  .contents__visual {
+    background-size: cover;
+  }
+  .contents__visual__title h1 {
+    font-size: 15rem;
+    margin-top: 3rem;
+  }
+  .contents__visual__title h1::after {
+    line-height: 3rem;
+  }
+  .contents__visual__title p {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+  .contents__visual__title p span {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .contents__visual {
+    padding: 10rem 1.875rem 12rem;
+  }
+  .contents__visual__title h1 {
+    font-size: 7.5rem;
+    margin-top: 3rem;
+  }
+  .contents__visual__title h1::after {
+    right: -1.5rem;
+    bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .contents__visual__title p {
+    font-size: 1.875rem;
+  }
+  .contents__visual__title p span {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 540px) {
+  .contents__visual__title h1 {
+    font-size: 5rem;
+  }
+}
+.contents__coupon {
+  position: relative;
+  text-align: center;
+  padding: 8.75rem 0 10.9375rem;
+  background: #f3d249;
+}
+.contents__coupon .section__number {
+  background: #f3d249;
+}
+.contents__coupon .section__number p {
+  position: relative;
+  color: #d0ae2c;
+}
+.contents__coupon .section__number p::after {
+  background: #d0ae2c;
+}
+.contents__coupon__title p {
+  color: #a1840c;
+}
+.contents__coupon__title h1 {
+  color: #493d0b;
+}
+.contents__benefit {
+  position: relative;
+  text-align: center;
+  padding: 9.25rem 0 10rem;
+  background: #f7f7a4;
+}
+.contents__benefit .section__number {
+  background: #f7f7a4;
+}
+.contents__benefit .section__number p {
+  color: rgba(125, 154, 82, 0.47);
+}
+.contents__benefit .section__number p::after {
+  background: rgba(125, 154, 82, 0.47);
+}
+.contents__benefit__title p {
+  color: rgba(125, 154, 82, 0.66);
+}
+.contents__benefit__title h1 {
+  color: #7d9a52;
+}
+.contents__promotion {
+  position: relative;
+  text-align: center;
+  padding: 11.25rem 0 7.75rem;
+  background: #7d9a52;
+}
+.contents__promotion .section__number {
+  background: #7d9a52;
+}
+.contents__promotion .section__number p {
+  color: #f7f7a4;
+}
+.contents__promotion .section__number p::after {
+  background: #f7f7a4;
+}
+.contents__promotion .section__title p {
+  color: rgba(237, 239, 157, 0.66);
+}
+.contents__promotion .section__title h1 {
+  color: #fff;
+}
+.contents__promotion__products {
+  display: flex;
+  justify-content: center;
+  margin-top: 8.875rem;
+}
+.contents__promotion__products .product {
+  padding: 0 0.5rem;
+}
+.contents__promotion__products .product__img {
+  position: relative;
+}
+.contents__promotion__products .product__img .badge {
+  position: absolute;
+  top: -3.375rem;
+  left: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.75rem;
+  height: 6.75rem;
+  border-radius: 100%;
+  background: #f3d249;
+}
+.contents__promotion__products .product__img .badge p {
+  font-family: "GmarketSansBold";
+  font-size: 1.25rem;
+  color: #3f3232;
+  line-height: 1.75rem;
+}
+.contents__promotion__products .product__img .img {
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.contents__promotion__products .product__img .img img {
+  height: 100%;
+}
+.contents__promotion__products .product__info {
+  margin-top: 3.5rem;
+}
+.contents__promotion__products .product__info h3 {
+  display: inline-block;
+  font-family: "GmarketSansBold";
+  font-size: 2.25rem;
+  color: #fff;
+  padding-bottom: 0.125rem;
+  border-bottom: 3px solid #fff;
+}
+.contents__promotion__products .product__info ul {
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+.contents__promotion__products .product__info ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.75rem;
+  color: #5d7933;
+  margin-bottom: 1.125rem;
+  padding: 0 1.875rem 0.25rem;
+  border-bottom: dotted 1px rgba(255, 255, 255, 0.29);
+}
+.contents__promotion__products .product__info ul li:last-child {
+  align-items: end;
+  margin-bottom: 0;
+  border: none;
+}
+.contents__promotion__products .product__info ul li:last-child p {
+  color: #fff;
+}
+.contents__promotion__products .product__info ul li:last-child h5 {
+  font-family: "GmarketSansBold";
+  font-size: 2.8125rem;
+  color: #f3d249;
+}
+@media (max-width: 768px) {
+  .contents__promotion__products {
+    flex-direction: column;
+  }
+  .contents__promotion__products .product {
+    margin-bottom: 7.5rem;
+    padding: 0 1rem;
+  }
+  .contents__promotion__products .product:last-child {
+    margin-bottom: 0;
+  }
+  .contents__promotion__products .product__img .img img {
+    width: 100%;
+  }
+}
+@media (max-width: 540px) {
+  .contents__promotion__products {
+    margin-top: 6rem;
+  }
+  .contents__promotion__products .product {
+    padding: 0 1rem;
+  }
+  .contents__promotion__products .product__info ul {
+    padding: 0;
+  }
+  .contents__promotion__products .product__info ul li {
+    font-size: 1.25rem;
+    padding: 0 1rem;
+  }
+}
+
+.section__number {
+  position: absolute;
+  top: -2.5rem;
+  left: 0;
+  right: 0;
+  width: 9.375rem;
+  height: 9.375rem;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+.section__number p {
+  position: relative;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  font-family: "GmarketSansBold";
+  font-size: 2.25rem;
+}
+.section__number p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 2px;
+}
+.section__title p {
+  font-size: 3.125rem;
+}
+.section__title h1 {
+  font-family: "GmarketSansBold";
+  font-size: 5.25rem;
+  margin-top: 2.5rem;
+}
+@media (max-width: 768px) {
+  .section__title {
+    padding: 0 1.875rem;
+  }
+  .section__title p {
+    font-size: 2.25rem;
+  }
+  .section__title h1 {
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 540px) {
+  .section__title {
+    padding: 0 1rem;
+  }
+  .section__title p {
+    font-size: 1.75rem;
+  }
+  .section__title h1 {
+    font-size: 2.75rem;
+  }
+  .section__title h1 span {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
